@@ -4,11 +4,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Loan Calculator</title>
   </head>
   <body class="bg-dark">
     <div class="container">
@@ -19,29 +19,29 @@
             <form id="load-form">
               <div class="form-group">
                 <div class="input-group">
-                  <span class="input-group-addon">$</span>
-                  <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                  <span class="input-group-addon addon">$</span>
+                  <input type="number" class="form-control" id="amount" step="0.01" placeholder="Loan Amount">
                 </div>
               </div>
               <div class="form-group">
                 <div class="input-group">
-                  <span class="input-group-addon">%</span>
-                  <input type="number" class="form-control" id="interest" placeholder="Interest">
+                  <span class="input-group-addon addon">%</span>
+                  <input type="number" class="form-control" id="interest" step="0.01" placeholder="Interest">
                 </div>
               </div>
               <div class="form-group">
-                <input type="number" class="form-control" id="years" placeholder="Years To Repay">
+                <input type="number" class="form-control" id="years" step="0.01" placeholder="Years To Repay">
               </div>
               <div class="form-group">
                 <input type="submit" value="Calculate" class="btn btn-dark btn-block">
               </div>
             </form>
             <!-- LOADER -->
-            <!-- <div id="loading">
+            <div id="loading">
               <img src="./img/loading.gif" alt="">
-            </div> -->
+            </div>
             <!-- RESULTS -->
-            <div id="results" class="pt-4"></div>
+            <div id="results" class="pt-4">
               <h5>Results</h5>
               <div class="form-group">
                 <div class="input-group">

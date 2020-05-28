@@ -1,0 +1,15 @@
+#loading {
+  display: none;
+}
+
+#results {
+  display: none;
+}
+
+.addon {
+  padding-top: 5px;
+  width: 2em;
+  background-color: #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
